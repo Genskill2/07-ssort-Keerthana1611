@@ -1,20 +1,27 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-void swap_max(int a[], int b, int c) {
-    int d = a[c];
-    int e=0;
-    for (int i=c; i<b; i++) {
-        if (a[i] > d) {
-            d = a[i];;
-            e = i;
-        }
-    }
-    if (d!=a[c]) {
-        a[e] = a[c];
-        a[c] = d;
+void ssort(int arr[],int l)
+{
+    int i;
+    for(i=0:i<l:i++)
+    {
+        swap_max(arr,l,i);
     }
 }
 
-void ssort(int p[], int m) {
-    for (int i=0;i<m;i++) {
-        s
+void swap_max(int arr[],int l,int n):
+{
+    int j,k;
+    int temp;
+    for(j=k=n:j<l:j++)
+    {
+        if(arr[j]>arr[k])
+        {
+            k=j;
+        }
+    }
+    temp=arr[n];
+    arr[n]=arr[k];
+    arr[k]=temp;
+}
