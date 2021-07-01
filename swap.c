@@ -10,7 +10,7 @@ void ssort(int arr[],int l)
     }
 }
 
-void swap_max(int arr[],int l,int n):
+void swap_max(int arr[],int l,int n)
 {
     int j,k;
     int temp;
